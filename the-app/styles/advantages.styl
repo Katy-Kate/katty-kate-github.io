@@ -1,0 +1,58 @@
+.advantages
+  padding 80px 10px
+  &_title
+    margin 20px 10px
+    font-weight 900
+    font-size 36px
+    text-transform uppercase
+    line-height 66px
+    letter-spacing 4px
+    text-align center
+    color #222323
+    text-shadow 0 1px 3px #cdcdce
+    opacity 0.76
+  &_item
+    display flex
+    max-width 750px
+    margin 0 auto 40px
+    &__text
+      padding-top 10px
+      font-size 18px
+      font-weight 100
+      line-height 25px
+      text-align justify
+      color #000
+    &__img
+      position relative
+      top 2px
+      left 2px
+      width 65px
+      height 65px
+      margin-right 60px
+      &-wrap
+        float left
+        width 65px
+        height 65px
+        padding 10px
+        box-sizing border-box
+        border-radius 50%
+        margin-right 40px
+  &__btn
+    display block
+    max-width 320px
+    margin: 10px auto
+@media all and (max-width: w_sm)
+  .advantages
+    padding 80px 15%
+    &_item__text
+      padding-top 5px
+@media all and (max-width: w_xs)
+  .advantages
+    padding 40px 15%
+    &_item
+      &__img
+        width 45px
+        margin-right 35px
+
+
+

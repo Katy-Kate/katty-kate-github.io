@@ -1,0 +1,74 @@
+.app
+  position relative
+  width 100%
+  height auto
+  padding 100px 10px 100px
+  box-sizing border-box
+  &_title
+    font-weight 900
+    font-size 36px
+    text-transform uppercase
+    line-height 66px
+    letter-spacing 4px
+    text-align center
+    color #222323
+    text-shadow 0 1px 3px #cdcdce
+    opacity 0.76
+  &_item
+    width 300px
+    padding 70px 4%
+    box-sizing border-box
+    &-wrap
+      display flex
+      flex-direction row
+      justify-content center
+    &__img
+      display block
+      margin 0 auto
+    &__text
+      font-weight 200
+      font-size 18px
+      line-height 25px
+      color #000000
+  &__img-wrap
+    width 120px
+    height 120px
+    margin 0 auto 40px
+    border-radius 50%
+    &--blue
+      background #1A91A1
+    &--turquoise
+      background #5DDDD3
+  &__btn
+    max-width 320px
+    width 40%
+    margin 10px 4%
+    &-wrap
+      display flex
+      justify-content center
+      flex-direction row
+      align-items center
+      padding-top 50px
+
+@media all and (max-width: w_sm)
+  .app
+    &_item
+      width 100%
+      padding 40px 0
+      &__text
+        padding 0 15%
+      &-wrap
+        display block
+    &__btn
+      &-wrap
+        padding-top 20px
+@media all and (max-width: 688px)
+  .app
+    padding 40px 10px
+    &__btn
+      width: 87%;
+      &-wrap
+        flex-direction column
+@media all and (max-width: w_xs)
+  .app
+    padding 60px 10px

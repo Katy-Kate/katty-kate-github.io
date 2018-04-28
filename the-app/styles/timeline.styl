@@ -1,0 +1,176 @@
+.timeline
+  @extend .container
+  padding-top 170px
+  overflow hidden
+  &__wrap
+    position relative
+    left 11%
+    max-width 45%
+    margin 50px auto
+    padding 0 50px 0 0
+    font-size 1.03em
+    text-align left
+    font-weight 100
+    letter-spacing .5px
+    line-height 1.4em
+    list-style none
+    color c_gray-text
+    border-bottom-right-radius 4px
+    border-top-right-radius 4px
+  &__item
+    position relative
+    padding 0 0 25px 70px
+    border-bottom 1px dashed rgba(255, 255, 255, .1)
+    border-left 1px solid c_timeline
+    opacity: 1
+    transition-duration time_trans
+    &:last-of-type
+      margin-bottom 0
+      padding-bottom 0
+      border none
+    &:before, &:after
+      position absolute
+      top 0
+    &:before
+      content attr(data-date)
+      left -195px
+      top 25px
+      min-width 120px
+      font-size 13px
+      font-family my_fonts_2
+      color c_gray-text-light
+      line-height 1.4
+      text-align right
+      font-weight 100
+    &:after
+      content ""
+      top 3px
+      left -5px
+      height 10px
+      width 10px
+      box-shadow 0 0 0 3px c_blue
+      background c_white
+      border-radius 50%
+    &_title
+      position: relative
+      color c_gray-text
+      font-size 17px
+      line-height 1.588
+      font-weight 500
+      opacity: 1
+      &:before
+        content attr(data-title)
+        position absolute
+        left -299px
+        width: 160px;
+        color c_blue
+        font-size 17px
+        line-height 1.4
+        text-align: right;
+    &_desc
+      margin-top 10px
+      font-size 13px
+      color c_gray-text-light
+      line-height 1.4
+      opacity: 1
+      transition-duration time_trans
+    &_readmore
+      display block
+      color c_blue
+      font-size 13px
+      line-height 2.077
+      text-transform capitalize
+      cursor pointer
+      opacity: 1
+      transition-duration time_trans
+
+.slide-right-left-effect
+  visibility visible
+  animation slide-right-left .6s
+
+
+.slide-left-right-effect
+  display block
+  animation slide-left-right 1s
+
+.slide-left-right-effect-delay
+  display block
+  animation slide-left-right 2s
+  animation-delay .5s
+
+
+@keyframes slide-right-left
+  0%
+    opacity 0
+    transform translateX(2000px)
+  100%
+    transform translateX(0)
+
+@keyframes slide-left-right
+  0%
+    opacity 0
+    transform translateX(-2000px)
+  70%
+    transform translateX(10px)
+  80%
+    transform translateX(-5px)
+  90%
+    transform translateX(2px)
+  100%
+    transform translateX(0)
+
+
+.visible-elem
+  .timeline__item:before
+    @extend .slide-left-right-effect-delay
+  .timeline__item_title
+    @extend .slide-right-left-effect
+    &:before, &:after
+      @extend .slide-left-right-effect
+  .timeline__item_desc
+    @extend .slide-right-left-effect
+
+.hidden-elem
+  .timeline__item:before
+    opacity: 0
+    left: -2005px;
+  .timeline__item_title
+    opacity: 0
+    &:before
+      opacity: 0
+  .timeline__item_desc
+    opacity: 0
+
+
+@media only screen and (max-width : width_md)
+  .timeline
+    &__wrap
+      max-width 65%
+      margin 25px
+      left 32.5%
+    &__item
+      padding-left 35px
+      &:before
+        left -150px
+      &_title
+        &:before
+          left -220px
+      &_desc
+        font-size: 14px
+
+@media all and (max-width: width_sm)
+  .timeline
+    &__wrap
+      max-width 50%
+      left: 36.5%;
+
+@media only screen and (max-width : width_xs)
+  .timeline
+    &__item
+      &:before
+        font-size: 12px
+      &_title
+        &:before
+          font-size: 13px
+      &_desc
+        font-size: 13px

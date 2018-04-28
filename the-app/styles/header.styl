@@ -1,0 +1,221 @@
+.header
+  position relative
+  width 100%
+  height auto
+  background linear-gradient(to top, #5DDDD3 0%, #5ae4c4 36%, #48e4a0 100%)
+  &-top
+    height auto
+    padding 27px 42px
+    .header_nav
+      float right
+      width auto
+      padding 35px 20px
+      &__item
+        margin 0 12px
+        padding 7px 0
+        font-size 16px
+        color #fff
+        letter-spacing 1.2px
+        text-transform uppercase
+        text-decoration none
+        border-bottom 1px solid transparent
+        transition-duration time_trans
+        &:hover
+          border-color #fff
+  &_title
+    margin-top 50px
+    padding 10px 10px 35px 10px
+    font-weight 100
+    font-size 61px
+    line-height 65px
+    letter-spacing 6px
+    text-align right
+    color #FFFFFF
+    border-bottom 1px solid rgba(255,255,255,0.52)
+    opacity .98
+.banner
+  position relative
+  display flex
+  flex-direction row
+  justify-content center
+  padding 20px 0 100px
+  animation bounceInUp 1s
+  &_content
+    display flex
+    justify-content center
+    flex-direction column
+    max-width 500px
+    margin-right 100px
+    &__text
+      margin-bottom 25px
+      padding 10px 35px
+      font-weight 100
+      font-size 16px
+      letter-spacing 1.2px
+      line-height 20px
+      color #FFFFFF
+  &__img
+    max-width 325px
+    width 100%
+.mobile-nav-button,.mobile-menu
+  display none
+@media all and (min-width: w_lg)
+  .header
+    &_title
+      width 70%
+      margin-left 15%
+@media all and (max-width: w_md)
+  .banner_content__btn
+    padding 15px 30px
+    margin 25px 15px
+    width auto
+@media all and (min-width: w_sm)
+  .header-top
+      .header_nav
+        display block
+  .banner_content__btn-wrap
+    display flex
+    flex-direction row
+    justify-content end
+@media all and (max-width: w_sm)
+  .banner
+    display flex
+    flex-direction column
+    justify-content space-around
+    width 100%
+    padding-bottom 30px
+    &_content
+      width 100%
+      margin-right 0
+      max-width 100%
+      &__btn
+        &-wrap
+          display flex
+          justify-content center
+          flex-direction row
+      &__title
+        text-align center
+        font-size 50px
+      &__text
+        text-align center
+    &__img-wrap
+      display flex
+      justify-content center
+      margin-bottom 30px
+  .header
+    &-top
+      padding 20px 24px
+      .header_logo__img
+        position: absolute
+        top 0
+        left 0
+      .header_nav
+        position absolute
+        left 0
+        top 80px
+        z-index 4
+        display none
+        justify-content center
+        flex-direction column
+        width 100%
+        padding 10px 0
+        box-sizing content-box
+        text-align center
+        background rgba(38, 56, 45, 0.74)
+        &__item
+          padding 10px 10px
+  .mobile-menu
+    position absolute
+    top 0
+    right -100%
+    z-index 9998
+    display block
+    max-width 500px
+    width 100%
+    height 100vh
+    background #fff
+    transition 0.6s ease
+    opacity 0
+    ul
+      position relative
+      top 50%
+      padding 0
+      transform translateY(-50%)
+      li
+        list-style: none
+        a
+          position relative
+          display block
+          width: 100%
+          margin 0 auto
+          text-align center
+          text-decoration none
+          color c_blue
+          font-size 21px
+          line-height 39px
+          text-transform uppercase
+          overflow hidden
+          &:after
+            position absolute
+            right -100%
+            top 0
+            z-index -1
+            width 100%
+            height 100%
+            content ''
+            background: c_gray-text
+            transition 0.4s ease
+          &:hover
+            color #ffffff
+            &:after
+              right 0
+    img
+      position absolute
+      left 50%
+      top 3rem
+      display block
+      width 150px
+      padding 0
+      text-align center
+      transform translatex(-50%)
+    &--open
+      right 0
+      opacity 1
+  .mobile-nav-button
+    position absolute
+    right 0
+    top 0
+    z-index 9999
+    display inherit
+    width 35px
+    height 30px
+    margin 2rem
+    cursor pointer
+    &__line
+      position relative
+      width 100%
+      height 4px
+      background c_orange
+      transition 1s ease
+      &:nth-of-type(2)
+        margin 0.5rem 0
+      &--1
+        position absolute
+        top 13px
+        transform rotate(45deg)
+      &--2
+        display none
+      &--3
+        position absolute
+        top 13px
+        transform rotate(135deg)
+
+@media all and (max-width: w_xs)
+  .banner_content__btn
+    margin 10px 20px
+    &-wrap
+      flex-direction column
+      max-width 300px
+      margin: 0 auto
+
+

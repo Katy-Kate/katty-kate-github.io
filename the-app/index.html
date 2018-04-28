@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link href="../node_modules/normalize.css" rel="stylecheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,300,800" rel="stylesheet" type="text/css">
+    <link href="../node_modules/reset-css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../node_modules/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="../node_modules/slick-carousel/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="../node_modules/ng-dialog/css/ngDialog.css" rel="stylesheet" type="text/css">
+    <link href="../node_modules/ng-dialog/css/ngDialog-theme-default.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <title>K E T</title>
+  </head>
+  <body ng-app="myApp" ng-controller="MainController as tab">
+    <header class="header">
+      <div class="header-top"><a href="#" class="header_logo"><img src="images/logo.png" class="header_logo__img"></a>
+        <div class="header_nav"><a href="#about" class="header_nav__item">about</a><a href="#reviews" class="header_nav__item">reviews</a><a href="#features" class="header_nav__item">features</a><a href="#prices" class="header_nav__item">prices</a><a href="#support" class="header_nav__item">support</a></div>
+        <div class="mobile-nav-button">
+          <div class="mobile-nav-button__line"></div>
+          <div class="mobile-nav-button__line"></div>
+          <div class="mobile-nav-button__line"></div>
+        </div>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#reviews">reviews</a></li>
+            <li><a href="#features">features</a></li>
+            <li><a href="#prices">prices</a></li>
+            <li><a href="#support">support</a></li>
+          </ul>
+        </div>
+      </div>
+      <h1 class="header_title">The great APP for your business!</h1>
+      <div class="banner">
+        <div class="banner_content">
+          <p class="banner_content__text">We helps companies provide a great overall customer experience, and build customer relationships that are more meaningful, personal, and productive</p>
+          <div class="banner_content__btn-wrap"><a href="#" class="banner_content__btn btn btn-light--active">choose a plan</a><a href="#" class="banner_content__btn btn btn-light">try for free</a></div>
+        </div>
+        <div class="banner__img-wrap"><img src="images/banner.png" class="banner__img"></div>
+      </div>
+    </header>
+    <content class="content">
+      <div id="about" class="app">
+        <h1 class="app_title">About the APP</h1>
+        <div class="app_item-wrap">
+          <div class="app_item">
+            <div class="app__img-wrap"><img src="images/icon-012.svg" class="app_item__img"></div>
+            <p class="app_item__text">A feature suite that gives you data and insights to build customer relationships that are more meaningful, personal, and productive.</p>
+          </div>
+          <div class="app_item">
+            <div class="app__img-wrap"><img src="images/icon-011.svg" class="app_item__img"></div>
+            <p class="app_item__text">An easy way for users to help themselves, quickly find what they need, and minimize their frustration.</p>
+          </div>
+          <div class="app_item">
+            <div class="app__img-wrap"><img src="images/icon-014.svg" class="app_item__img"></div>
+            <p class="app_item__text">A feature suite that gives you data and insights to build customer relationships that are more meaningful, personal, and productive.</p>
+          </div>
+        </div>
+        <div class="app__btn-wrap"><a href="#" class="app__btn btn btn-dark--active">take a tour</a><a href="#" class="app__btn btn btn-dark">get free demo access</a></div>
+      </div>
+      <div id="reviews" class="reviews">
+        <h1 class="reviews_title">75,000+ Companies trust us</h1>
+        <div class="reviews_item">
+          <div class="reviews_item__img-wrap"><img src="images/Photo-1.jpg" class="reviews_item__img reviews_item__img--elon"></div>
+          <div class="reviews_item__name">Elon Reeve Musk</div>
+          <div class="reviews_item__occupation">CEO Tesla Motors</div>
+          <div class="reviews_item__text">Just as a bird, wherever it goes, flies with its wings as its only burden, so too, the bhikkhu becomes content with robes to protect his body and with almsfood to maintain his stomach, and wherever he goes he sets out taking only these with him.</div>
+        </div>
+        <div class="reviews_item">
+          <div class="reviews_item__img-wrap"><img src="images/Photo-2.jpg" class="reviews_item__img reviews_item__img--satya"></div>
+          <div class="reviews_item__name">Satya Nadella</div>
+          <div class="reviews_item__occupation">CEO Microsoft</div>
+          <div class="reviews_item__text">Just as a bird, wherever it goes, flies with its wings as its only burden, so too, the bhikkhu becomes content with robes to protect his body and with almsfood to maintain his stomach, and wherever he goes he sets out taking only these with him.</div>
+        </div>
+        <div class="reviews_item">
+          <div class="reviews_item__img-wrap"><img src="images/Photo-3.jpg" class="reviews_item__img reviews_item__img--mark"></div>
+          <div class="reviews_item__name">Mark Zuherberg</div>
+          <div class="reviews_item__occupation">CEO Facebook</div>
+          <div class="reviews_item__text">Just as a bird, wherever it goes, flies with its wings as its only burden, so too, the bhikkhu becomes content with robes to protect his body and with almsfood to maintain his stomach, and wherever he goes he sets out taking only these with him.</div>
+        </div>
+        <div class="reviews_btn-wrap"><a href="#" class="reviews_btn btn btn-dark--active">see more reviews</a><a href="#" class="reviews_btn btn btn-dark">leave a revies</a></div>
+      </div>
+      <div id="features" class="advantages">
+        <h1 class="advantages_title">Our advantages</h1>
+        <div class="advantages_item"><img src="images/icon-001.svg" class="advantages_item__img">
+          <div class="advantages_item__text">Get to understand the real advantages of creating a mobile app for your business and you’ll find the answer.</div>
+        </div>
+        <div class="advantages_item"><img src="images/icon-002.svg" class="advantages_item__img">
+          <div class="advantages_item__text">Suppose you have an apparel and accessories boutique at a central location. And you know that many prospective customers walk by your store every day.</div>
+        </div>
+        <div class="advantages_item"><img src="images/icon-003.svg" class="advantages_item__img">
+          <div class="advantages_item__text">Develop a mobile app that makes it easy to connect with you, or offers customers the tools to make it easier for them to use your product or service, and you’ll make them happy.</div>
+        </div>
+        <div class="advantages_item"><img src="images/icon-004.svg" class="advantages_item__img">
+          <div class="advantages_item__text">Before you appoint a professional to create your app, decide what you want it to do.</div>
+        </div>
+        <div class="advantages_item"><img src="images/icon-005.svg" class="advantages_item__img">
+          <div class="advantages_item__text">With a mobile app, you can achieve results you simply cannot with just a mobile-friendly website. For starters, the app, once downloaded, stays on in</div>
+        </div><a href="#" class="advantages__btn btn btn-dark">read more about us</a>
+      </div>
+      <div id="prices" class="plan">
+        <h1 class="plan_title">Choose a plan</h1>
+        <div class="plan_item-wrap">
+          <div class="plan_item plan_item--dark">
+            <div class="plan_item__prise-wrap plan_item__prise-wrap--dark">
+              <p class="plan_item__prise">99$</p>
+            </div>
+            <div class="plan_item__name">Basic pricing</div>
+            <p class="plan_item__description">Free admin access</p>
+            <p class="plan_item__description">5 user accounts</p>
+            <p class="plan_item__description">10 active projects</p>
+            <p class="plan_item__description">1 year free support</p><a href="#" class="plan_item__btn plan_item__btn--darck">get</a>
+          </div>
+          <div class="plan_item plan_item--blue">
+            <div class="plan_item__prise-wrap plan_item__prise-wrap--blue">
+              <p class="plan_item__prise">399$</p>
+            </div>
+            <div class="plan_item__name">PRO pricing</div>
+            <p class="plan_item__description">Free admin access</p>
+            <p class="plan_item__description">100 user accounts</p>
+            <p class="plan_item__description">50 active projects</p>
+            <p class="plan_item__description">3 year free support</p><a href="#" class="plan_item__btn plan_item__btn--blue">get</a>
+          </div>
+          <div class="plan_item plan_item--orange">
+            <div class="plan_item__prise-wrap plan_item__prise-wrap--orange">
+              <p class="plan_item__prise">999$</p>
+            </div>
+            <div class="plan_item__name">Elite pricing</div>
+            <p class="plan_item__description">Free admin access</p>
+            <p class="plan_item__description">5000 user accounts</p>
+            <p class="plan_item__description">unlimiited active projects</p>
+            <p class="plan_item__description">3 year free support</p><a href="#" class="plan_item__btn plan_item__btn--orange">get</a>
+          </div>
+        </div>
+      </div>
+      <div id="support" class="support">
+        <h1 class="support_title">Support</h1>
+        <div class="support_description">Do you have any questions? Let ask!</div>
+        <div class="support_form">
+          <input placeholder="name" class="support_form__input">
+          <input placeholder="email" class="support_form__input">
+          <input placeholder="message" class="support_form__input support_form__input--textarea"><a class="support_form__btn-submit btn btn-dark">send</a>
+        </div>
+      </div>
+    </content>
+    <div class="footer"><a href="#" class="footer_logo"><img src="images/logo.png" class="footer_logo__img"></a>
+      <div class="footer__btn-wrap">
+        <div class="footer__btn btn btn-light--active">choose a plan</div>
+        <div class="footer__btn btn btn-light">try for free</div>
+      </div>
+      <div class="footer_menu"><a href="#about" class="footer_menu__item">about</a><a href="#reviews" class="footer_menu__item">reviews</a><a href="#features" class="footer_menu__item">features</a><a href="#prices" class="footer_menu__item">prices</a><a href="#support" class="footer_menu__item">support</a></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="mob-menu-active.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.footer
+  display: flex
+  flex-direction column
+  justify-content center
+  align-items center
+  width 100%
+  padding 5px 5px 30px
+  background linear-gradient(to top, #5DDDD3 0%, #5ae4c4 36%, #48e4a0 100%)
+  &_logo
+    margin 40px 40px 28px
+    &__img
+      width 200px
+      height auto
+  &__btn
+    &-wrap
+      margin-bottom 50px
+  &_menu__item
+    margin-right 15px
+    padding 7px 0
+    font-size 15px
+    color #ffffff
+    text-transform uppercase
+    text-decoration none
+    &:hover
+      border-bottom 1px solid
+@media all and (max-width: w_xs)
+  .footer
+    &__btn
+      width 90%
+      margin 10px 20px
+    &_menu__item
+      font-size: 12px
