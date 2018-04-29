@@ -1,0 +1,248 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.grid
+  display: grid
+
+.main-header
+  position: relative
+  min-height: 100vh
+  background-size: cover
+  background-position: center
+  align-content: center
+  &::before
+    content: ""
+    position: absolute
+    right: 0
+    top: 0
+    left: 0
+    bottom: 0
+    background-color: $dark
+    opacity:  .92
+
+.header-content
+  z-index: 1
+  color: #ffffff
+  text-align: center
+  padding: 60px $gutter
+  h1
+    font-size: 60px
+    font-family: raleway-example, sans-serif
+    font-weight: normal
+    margin: 20px 0
+  .button
+    margin: 10px
+
+.button
+  display: inline-block
+  border: none
+  color: #fff
+  text-decoration: none
+  background-color: $accent
+  padding: 15px 45px
+  font-size: 20px
+  text-transform: uppercase
+  text-align: center
+  position: relative
+  outline: none
+  transition: background-color .1s ease
+  cursor: pointer
+  &::after
+    transition: background-color .2s ease
+    position: absolute
+    content: ''
+    height: 4px
+    bottom: 0
+    width: 100%
+    background-color: darken($accent, 50%)
+    opacity: .18
+    border-bottom-left-radius: 2px
+    border-bottom-right-radius: 2px
+    left: 0
+  &:focus, &:hover
+    text-decoration: none
+    color: #fff
+  &:hover
+    background-color: lighten($accent, 5%)
+    &::after
+      opacity: .22
+  &:active
+    background-color: darken($accent, 5%)
+    &::after
+       opacity: .32
+  &.button-grey
+    background-color: $gray
+    &::after
+       background-color: darken($gray, 15%)
+    &:hover
+      background-color: lighten($gray, 15%)
+    &::after
+      opacity: .22
+    &:active
+      background-color: darken($gray,15%)
+
+.portfolio-section
+  padding: 10px
+  grid-template-columns: repeat(4,1fr)
+  grid-gap: 10px
+.portfolio-item
+  position: relative
+  min-height: 32vh
+  background-size: cover
+  background-position: center
+  text-align: center
+  align-content: center
+  padding: $gutter
+  font-size: 20px
+  font-weight: bold
+  color: #ffffff
+  transition: color .5s ease
+  cursor: pointer
+  &:hover
+    color: $accent
+    &::before
+      opacity: .85
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: $dark
+    opacity: .65
+    transition: opacity .5s ease
+  > *
+    z-index: 1
+
+  &:nth-child(1)
+    grid-column: 1/3
+  &:nth-child(5)
+    grid-column: 2/4
+  &:nth-child(6)
+    grid-column: 4
+    grid-row: 2/4
+
+.buttoncase
+  grid-column: 1/-1
+  padding: $gutter $gutter 50px
+
+.container
+  max-width: 1200px
+  margin: auto
+  padding: 0 $gutter
+.landing-section
+  padding: 80px 0
+  h2
+    font-size: 34px
+    font-weight: 800
+    color:  $dark
+    line-height: 1.2
+
+.section-ready
+  background-color: $light
+  .container
+    grid-template-columns: 1fr 1fr
+
+.ready-left
+  font-size: 18px
+  padding:
+    top: 60px
+    bottom: 60px
+    right: 60px
+  h2
+    margin-top: 0
+    margin-bottom: 40px
+.ready-right
+  padding-left: 90px
+
+
+.formsection
+  padding: 30px 0
+  background-color: $dark
+  input
+    background-color: lighten($dark, 7%)
+  form
+    grid-gap: $gutter
+    grid-template-columns: repeat(4,1fr)
+  .button
+    font-size: 14px
+    padding: 12px
+    width: 100%
+
+input, textarea
+  border: 0
+  padding: 15px 20px
+  width: 100%
+  font-family: Arial, sans-serif
+  font-style: italic
+  outline: none
+  transition: background-color .25s ease
+  &:focus
+    background-color: $light
+  &::placeholder
+    color: lighten($dark, 20%)
+.section-blog
+  h2
+    margin: 0 auto 45px
+  .buttoncase
+    padding-bottom: 0
+.blog-home
+  grid-gap: $gutter
+  grid-template-columns: repeat(4, 1fr)
+.blog-item
+  background-color: #f7f7f7
+  text-decoration: none
+  grid-template-rows: 1fr 1fr
+  transition: background-color .25s ease
+  overflow: hidden
+  color: #333333
+  &:nth-child(3)
+    grid-column: 3/5
+  &:nth-child(4)
+    grid-column: 1/3
+  &:hover
+    background-color: $light
+    h4
+    color: $dark
+    .blog-item-img
+      transform: scale(1.05) translateY(-6.5px)
+  &-img
+    height: 270px
+    background-size: cover
+    background-position: center
+    transition: transform .25s ease
+  &-content
+    padding: 25px
+    text-align: center
+    align-content: center
+    h4
+      font-size: 18px
+      color: #666
+      line-height: 1.3
+      margin: 0
+      transition: color.25s ease
+    p
+      margin-top: 20px
+      margin-bottom: 0
+.main-footer
+  padding: 60px 0
+  background-color: darken($dark, 70%)
+  text-align: center
+  color: #676767
+.footer-logo
+  font-family: raleway-example
+  font-size: 22px
+  font-weight: bold
+  line-height: 1.3
+  span
+    display: block
+    color: #707476
+    font-size: 35px
+
+
+
+@import "media" // Всегда в конце
