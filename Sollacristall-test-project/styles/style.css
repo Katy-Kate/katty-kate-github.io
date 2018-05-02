@@ -714,8 +714,8 @@ input:focus {
 }
 .services-gallery_item--3 {
   -ms-grid-column: 5;
-  background-image: url("../images/3.jpg");
-  -webkit-background-image: url("../images/3.jpg");
+  background-image: url("../images/3.JPG");
+  -webkit-background-image: url("../images/3.JPG");
 }
 .services-gallery_item--4 {
   -ms-grid-column: 7;
