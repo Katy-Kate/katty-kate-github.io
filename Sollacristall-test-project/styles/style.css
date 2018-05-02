@@ -714,11 +714,7 @@ input:focus {
 }
 .services-gallery_item--3 {
   -ms-grid-column: 5;
-<<<<<<< HEAD
   background-image: url("../images/3.JPG");
-=======
-  background-image: url("../images/3.jpg");
->>>>>>> 02a56c4c38f35c2846e0e8d727edd3a55ca104df
   -webkit-background-image: url("../images/3.JPG");
 }
 .services-gallery_item--4 {
