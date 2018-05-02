@@ -612,7 +612,7 @@ input:focus {
   width: 200px;
 }
 .main_right__wrapper {
-  height: 100%;
+  height: calc(100% - 50px);
   width: 200px;
   grid-area: main-right;
   padding: 20px;
