@@ -1,0 +1,303 @@
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  scroll-behavior: smooth;
+  min-width: 320px;
+}
+
+h2,
+.h2 {
+  font-size: 1.5rem;
+  padding: 0.6em 0;
+}
+
+table {
+  width: 100%;
+}
+
+#table1 tr,
+#table3 tr {
+  height: 92px;
+}
+
+#table1 tr td,
+#table3 tr td {
+  background-color: transparent !important;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+  background: #eff3f6;
+}
+
+.panel_task {
+  padding: 15px;
+}
+
+.icon {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+  color: #8c8c8c;
+}
+
+.box-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 18px 1fr;
+  margin: 10px 0;
+  padding: 3px;
+  max-width: 915px;
+  background: #fff;
+  box-shadow: 3px 0px 7px rgba(103,162,206,0.13);
+  border-radius: 3px;
+  border-style: none !important;
+}
+
+.box-line {
+  width: 3px;
+  height: 100%;
+}
+
+.box-line--orange {
+  background: #f60;
+}
+
+.box-line--green {
+  background: #3c0;
+}
+
+.box-line--blue {
+  background: #0f72bd;
+}
+
+.box-line--red {
+  background: #c00;
+}
+
+.box-btn {
+  width: 15px;
+  margin-left: 6px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  margin: 20px 0;
+}
+
+.box-btn_btn {
+  border-style: none !important;
+  width: 11px;
+  height: 20px;
+  line-height: 0.5;
+  color: #627080;
+}
+
+.box > div {
+  padding: 0 1rem;
+}
+
+.box_title {
+  min-width: 200px;
+  border-right: 1px solid #eff3f6;
+}
+
+.box_title__name {
+  font-size: 1.13rem;
+  margin-bottom: 0.56em;
+  color: #000;
+}
+
+.box_title__company {
+  font-size: 1rem;
+  color: #8c8c8c;
+}
+
+.box_time {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.box_time__date {
+  display: inline-block;
+  width: auto;
+  margin-right: 3px;
+  color: #000;
+}
+
+.box_time__hour {
+  display: inline-block;
+  width: auto;
+  color: #8c8c8c;
+}
+
+.box_time__hour--end {
+  display: none;
+}
+
+.box_duration {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.box_duration__hour {
+  display: inline-block;
+  width: auto;
+  color: #8c8c8c;
+}
+
+.box_crane {
+  border-right: 1px solid #eff3f6;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.box_crane__number {
+  display: inline-block;
+  width: auto;
+  color: #8c8c8c;
+}
+
+.box_editing {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.box_editing__icon {
+  margin-right: 0;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.calendar_time {
+  padding: 0 10px;
+  background: #dfe7ed;
+}
+
+.calendar_time div {
+  height: 60px;
+  text-align: center;
+  color: #8c8c8c;
+  border: 1px solid transparent;
+}
+
+.calendar_time div::nth-child(1) {
+  height: 55px;
+}
+
+.calendar_table {
+  background: #fff;
+}
+
+.calendar_table__row {
+  height: 55px;
+}
+
+.calendar_table__row:nth-child(2n) {
+  background: #f7f9fb;
+  border-top: 1px solid #dfe7ed;
+  border-bottom: 1px solid #dfe7ed;
+}
+
+.calendar_table__col {
+  border-right: 1px solid #dfe7ed;
+  width: 50%;
+}
+
+#table2 {
+  min-width: 530px;
+}
+
+#table2 tr {
+  height: 60px;
+}
+
+#table2 .box {
+  display: block;
+  text-align: right;
+  margin: 0;
+  padding-right: 5px;
+}
+
+#table2 .box_title {
+  border-right: 0;
+  min-width: auto;
+}
+
+#table2 .box_time {
+  display: inline-block;
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #8c8c8c;
+  font-size: 0.8rem;
+}
+
+#table2 .box_time__name {
+  font-size: 1rem;
+}
+
+#table2 .box_time__hour {
+  float: left;
+  padding-right: 5px;
+}
+
+#table2 .box_time__hour--end {
+  display: block;
+}
+
+#table2 .box_duration {
+  display: inline-block;
+  float: right;
+  font-size: 0.8rem;
+  padding-left: 0;
+}
+
+#table2 .box-wrapper {
+  position: absolute;
+  width: 250px !important;
+  min-height: 50px;
+  grid-template-columns: 0px 20px 1fr;
+  margin: -25px 0 0 0;
+}
+
+#table2 .box_title__company,
+#table2 .icon,
+#table2 .box_time__date,
+#table2 .box_editing,
+#table2 .box_crane {
+  display: none;
+}

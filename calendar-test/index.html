@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> - My Site</title>
+    <!--link(rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css")-->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/redips-drag-min.js"></script>
+    <script src="js/js.js"></script>
+  </head>
+  <body>
+    <div id="redips-drag" class="panel">
+      <div id="left" class="panel_task">
+        <h2 class="h2">Unscheduled</h2>
+        <table id="table1" class="unscheduled">
+          <tbody>
+            <tr>
+              <td>
+                <div class="redips-drag box-wrapper">
+                  <div class="box-line box-line--orange"></div>
+                  <div onmouseover="enableDrop(this)" class="box-btn">
+                    <div class="box-btn_btn">. . .</div>
+                  </div>
+                  <div onmouseover="disableDrop(this)" class="box">
+                    <div class="box_title">
+                      <div class="box_title__name">Basement - Electrics</div>
+                      <div class="box_title__company">AusLek</div>
+                    </div>
+                    <div class="box_time"><i class="far fa-calendar-alt box_time__icon icon"></i>
+                      <div class="box_time__date">Today -</div>
+                      <div class="box_time__hour box_time__hour--start"> 8:30</div>
+                      <div class="box_time__hour box_time__hour--end">- 10:50</div>
+                    </div>
+                    <div class="box_duration"><i class="far fa-clock box_duration__icon icon"></i>
+                      <div class="box_duration__hour">2hr 20min</div>
+                    </div>
+                    <div class="box_crane">
+                      <div class="box_crane__icon fa-seedling fas icon"></div>
+                      <div class="box_crane__number">2</div>
+                    </div>
+                    <div class="box_editing">
+                      <div class="box_editing__icon fas fa-pencil-alt icon"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="redips-drag box-wrapper">
+                  <div class="box-line box-line--orange"></div>
+                  <div onmouseover="enableDrop(this)" class="box-btn">
+                    <div class="box-btn_btn">. . .</div>
+                  </div>
+                  <div onmouseover="disableDrop(this)" class="box">
+                    <div class="box_title">
+                      <div class="box_title__name">Level 2 - Concreting</div>
+                      <div class="box_title__company">JB Enterprises</div>
+                    </div>
+                    <div class="box_time"><i class="far fa-calendar-alt box_time__icon icon"></i>
+                      <div class="box_time__date">12/12/17 -</div>
+                      <div class="box_time__hour box_time__hour--start">11:45</div>
+                      <div class="box_time__hour box_time__hour--end">- 12:25</div>
+                    </div>
+                    <div class="box_duration"><i class="far fa-clock box_duration__icon icon"></i>
+                      <div class="box_duration__hour">45min</div>
+                    </div>
+                    <div class="box_crane">
+                      <div class="box_crane__icon fa-seedling fas icon"></div>
+                      <div class="box_crane__number">2</div>
+                    </div>
+                    <div class="box_editing">
+                      <div class="box_editing__icon fas fa-pencil-alt icon"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="redips-drag box-wrapper">
+                  <div class="box-line box-line--orange"></div>
+                  <div onmouseover="enableDrop(this)" class="box-btn">
+                    <div class="box-btn_btn">. . .</div>
+                  </div>
+                  <div onmouseover="disableDrop(this)" class="box">
+                    <div class="box_title">
+                      <div class="box_title__name">Level 13 - Formwork</div>
+                      <div class="box_title__company">NSW Wood PLC</div>
+                    </div>
+                    <div class="box_time"><i class="far fa-calendar-alt box_time__icon icon"></i>
+                      <div class="box_time__date">14/1/18 -</div>
+                      <div class="box_time__hour box_time__hour--sart"> 14:30</div>
+                      <div class="box_time__hour box_time__hour--end"> - 15:40</div>
+                    </div>
+                    <div class="box_duration"><i class="far fa-clock box_duration__icon icon"></i>
+                      <div class="box_duration__hour">1hour 10min</div>
+                    </div>
+                    <div class="box_crane">
+                      <div class="box_crane__icon fa-seedling fas icon"></div>
+                      <div class="box_crane__number">2</div>
+                    </div>
+                    <div class="box_editing">
+                      <div class="box_editing__icon fas fa-pencil-alt icon"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="h2">Recently Updated</h2>
+        <!--table#table3.unscheduled-->
+        <!--    tbody-->
+        <!--        tr-->
+        <!--            td-->
+        <!--                .redips-drag.box-wrapper-->
+        <!--                    .box-line.box-line--orange-->
+        <!--                    .box-btn(onmouseover="enableDrop(this)")-->
+        <!--                        .box-btn_btn . . .-->
+        <!--                    .box(onmouseover="disableDrop(this)")-->
+        <!--                        .box_title-->
+        <!--                            .box_title__name Basement - Electrics-->
+        <!--                            .box_title__company AusLek-->
+        <!--                        .box_time-->
+        <!--                            i.far.fa-calendar-alt.box_time__icon.icon-->
+        <!--                            .box_time__date Today --->
+        <!--                            .box_time__hour.box_time__hour--start  8:30-->
+        <!--                            .box_time__hour.box_time__hour--end - 10:50-->
+        <!--                        .box_duration-->
+        <!--                            i.far.fa-clock.box_duration__icon.icon-->
+        <!--                            .box_duration__hour 2hr 20min-->
+        <!--                        .box_crane-->
+        <!--                            .box_crane__icon.fa-seedling.fas.icon-->
+        <!--                            .box_crane__number 2-->
+        <!--                        .box_editing-->
+        <!--                            .box_editing__icon.fas.fa-pencil-alt.icon-->
+        <!--        tr-->
+        <!--            td-->
+        <!--                .redips-drag.box-wrapper-->
+        <!--                    .box-line.box-line--orange-->
+        <!--                    .box-btn(onmouseover="enableDrop(this)")-->
+        <!--                        .box-btn_btn . . .-->
+        <!--                    .box(onmouseover="disableDrop(this)")-->
+        <!--                        .box_title-->
+        <!--                            .box_title__name Level 2 - Concreting-->
+        <!--                            .box_title__company JB Enterprises-->
+        <!--                        .box_time-->
+        <!--                            i.far.fa-calendar-alt.box_time__icon.icon-->
+        <!--                            .box_time__date 12/12/17 --->
+        <!--                            .box_time__hour.box_time__hour--start 11:45-->
+        <!--                            .box_time__hour.box_time__hour--end - 12:25-->
+        <!--                        .box_duration-->
+        <!--                            i.far.fa-clock.box_duration__icon.icon-->
+        <!--                            .box_duration__hour 45min-->
+        <!--                        .box_crane-->
+        <!--                            .box_crane__icon.fa-seedling.fas.icon-->
+        <!--                            .box_crane__number 2-->
+        <!--                        .box_editing-->
+        <!--                            .box_editing__icon.fas.fa-pencil-alt.icon-->
+        <!--        tr-->
+        <!--            td-->
+        <!--                .redips-drag.box-wrapper-->
+        <!--                    .box-line.box-line--orange-->
+        <!--                    .box-btn(onmouseover="enableDrop(this)")-->
+        <!--                        .box-btn_btn . . .-->
+        <!--                    .box(onmouseover="disableDrop(this)")-->
+        <!--                        .box_title-->
+        <!--                            .box_title__name Level 13 - Formwork-->
+        <!--                            .box_title__company NSW Wood PLC-->
+        <!--                        .box_time-->
+        <!--                            i.far.fa-calendar-alt.box_time__icon.icon-->
+        <!--                            .box_time__date 14/1/18-->
+        <!--                            .box_time__hour.box_time__hour--sart - 14:30-->
+        <!--                            .box_time__hour.box_time__hour--end 15:40-->
+        <!--                        .box_duration-->
+        <!--                            i.far.fa-clock.box_duration__icon.icon-->
+        <!--                            .box_duration__hour 1hour 10min-->
+        <!--                        .box_crane-->
+        <!--                            .box_crane__icon.fa-seedling.fas.icon-->
+        <!--                            .box_crane__number 2-->
+        <!--                        .box_editing-->
+        <!--                            .box_editing__icon.fas.fa-pencil-alt.icon-->
+        <table id="table3" class="updated">
+          <tbody>
+            <tr>
+              <td>
+                <div class="redips-drag box-wrapper">
+                  <div class="box-line box-line--green"></div>
+                  <div onmouseover="enableDrop(this)" class="box-btn">
+                    <div class="box-btn_btn">. . .</div>
+                  </div>
+                  <div onmouseover="disableDrop(this)" class="box">
+                    <div class="box_title">
+                      <div class="box_title__name">Basement - Electrics</div>
+                      <div class="box_title__company">AusLek</div>
+                    </div>
+                    <div class="box_time"><i class="far fa-calendar-alt box_time__icon icon"></i>
+                      <div class="box_time__date">Today -</div>
+                      <div class="box_time__hour box_time__hour--start"> 8:30</div>
+                      <div class="box_time__hour box_time__hour--end">- 10:50</div>
+                    </div>
+                    <div class="box_duration"><i class="far fa-clock box_duration__icon icon"></i>
+                      <div class="box_duration__hour">2hr 20min</div>
+                    </div>
+                    <div class="box_crane">
+                      <div class="box_crane__icon fa-seedling fas icon"></div>
+                      <div class="box_crane__number">2</div>
+                    </div>
+                    <div class="box_editing">
+                      <div class="box_editing__icon fas fa-pencil-alt icon"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="redips-drag box-wrapper">
+                  <div class="box-line box-line--red"></div>
+                  <div onmouseover="enableDrop(this)" class="box-btn">
+                    <div class="box-btn_btn">. . .</div>
+                  </div>
+                  <div onmouseover="disableDrop(this)" class="box">
+                    <div class="box_title">
+                      <div class="box_title__name">Level 2 - Concreting</div>
+                      <div class="box_title__company">JB Enterprises</div>
+                    </div>
+                    <div class="box_time"><i class="far fa-calendar-alt box_time__icon icon"></i>
+                      <div class="box_time__date">12/12/17 -</div>
+                      <div class="box_time__hour box_time__hour--start">11:45</div>
+                      <div class="box_time__hour box_time__hour--end">- 12:25</div>
+                    </div>
+                    <div class="box_duration"><i class="far fa-clock box_duration__icon icon"></i>
+                      <div class="box_duration__hour">45min</div>
+                    </div>
+                    <div class="box_crane">
+                      <div class="box_crane__icon fa-seedling fas icon"></div>
+                      <div class="box_crane__number">2</div>
+                    </div>
+                    <div class="box_editing">
+                      <div class="box_editing__icon fas fa-pencil-alt icon"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="redips-drag box-wrapper">
+                  <div class="box-line box-line--blue"></div>
+                  <div onmouseover="enableDrop(this)" class="box-btn">
+                    <div class="box-btn_btn">. . .</div>
+                  </div>
+                  <div onmouseover="disableDrop(this)" class="box">
+                    <div class="box_title">
+                      <div class="box_title__name">Level 13 - Formwork</div>
+                      <div class="box_title__company">NSW Wood PLC</div>
+                    </div>
+                    <div class="box_time"><i class="far fa-calendar-alt box_time__icon icon"></i>
+                      <div class="box_time__date">14/1/18</div>
+                      <div class="box_time__hour box_time__hour--sart">- 14:30</div>
+                      <div class="box_time__hour box_time__hour--end">15:40</div>
+                    </div>
+                    <div class="box_duration"><i class="far fa-clock box_duration__icon icon"></i>
+                      <div class="box_duration__hour">1hour 10min</div>
+                    </div>
+                    <div class="box_crane">
+                      <div class="box_crane__icon fa-seedling fas icon"></div>
+                      <div class="box_crane__number">2</div>
+                    </div>
+                    <div class="box_editing">
+                      <div class="box_editing__icon fas fa-pencil-alt icon"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="redips-drag box-wrapper">
+                  <div class="box-line box-line--green"></div>
+                  <div onmouseover="enableDrop(this)" class="box-btn">
+                    <div class="box-btn_btn">. . .</div>
+                  </div>
+                  <div onmouseover="disableDrop(this)" class="box">
+                    <div class="box_title">
+                      <div class="box_title__name">Basement - Electrics</div>
+                      <div class="box_title__company">AusLek</div>
+                    </div>
+                    <div class="box_time"><i class="far fa-calendar-alt box_time__icon icon"></i>
+                      <div class="box_time__date">Today -</div>
+                      <div class="box_time__hour box_time__hour--start"> 8:30</div>
+                      <div class="box_time__hour box_time__hour--end">- 10:50</div>
+                    </div>
+                    <div class="box_duration"><i class="far fa-clock box_duration__icon icon"></i>
+                      <div class="box_duration__hour">2hr 20min</div>
+                    </div>
+                    <div class="box_crane">
+                      <div class="box_crane__icon fa-seedling fas icon"></div>
+                      <div class="box_crane__number">2</div>
+                    </div>
+                    <div class="box_editing">
+                      <div class="box_editing__icon fas fa-pencil-alt icon"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="redips-drag box-wrapper">
+                  <div class="box-line box-line--red"></div>
+                  <div onmouseover="enableDrop(this)" class="box-btn">
+                    <div class="box-btn_btn">. . .</div>
+                  </div>
+                  <div onmouseover="disableDrop(this)" class="box">
+                    <div class="box_title">
+                      <div class="box_title__name">Level 2 - Concreting</div>
+                      <div class="box_title__company">JB Enterprises</div>
+                    </div>
+                    <div class="box_time"><i class="far fa-calendar-alt box_time__icon icon"></i>
+                      <div class="box_time__date">12/12/17 -</div>
+                      <div class="box_time__hour box_time__hour--start">11:45</div>
+                      <div class="box_time__hour box_time__hour--end">- 12:25</div>
+                    </div>
+                    <div class="box_duration"><i class="far fa-clock box_duration__icon icon"></i>
+                      <div class="box_duration__hour">45min</div>
+                    </div>
+                    <div class="box_crane">
+                      <div class="box_crane__icon fa-seedling fas icon"></div>
+                      <div class="box_crane__number">2</div>
+                    </div>
+                    <div class="box_editing">
+                      <div class="box_editing__icon fas fa-pencil-alt icon"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="redips-drag box-wrapper">
+                  <div class="box-line box-line--blue"></div>
+                  <div onmouseover="enableDrop(this)" class="box-btn">
+                    <div class="box-btn_btn">. . .</div>
+                  </div>
+                  <div onmouseover="disableDrop(this)" class="box">
+                    <div class="box_title">
+                      <div class="box_title__name">Level 13 - Formwork</div>
+                      <div class="box_title__company">NSW Wood PLC</div>
+                    </div>
+                    <div class="box_time"><i class="far fa-calendar-alt box_time__icon icon"></i>
+                      <div class="box_time__date">14/1/18</div>
+                      <div class="box_time__hour box_time__hour--sart">- 14:30</div>
+                      <div class="box_time__hour box_time__hour--end">15:40</div>
+                    </div>
+                    <div class="box_duration"><i class="far fa-clock box_duration__icon icon"></i>
+                      <div class="box_duration__hour">1hour 10min</div>
+                    </div>
+                    <div class="box_crane">
+                      <div class="box_crane__icon fa-seedling fas icon"></div>
+                      <div class="box_crane__number">2</div>
+                    </div>
+                    <div class="box_editing">
+                      <div class="box_editing__icon fas fa-pencil-alt icon"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="redips-drag box-wrapper">
+                  <div class="box-line box-line--green"></div>
+                  <div onmouseover="enableDrop(this)" class="box-btn">
+                    <div class="box-btn_btn">. . .</div>
+                  </div>
+                  <div onmouseover="disableDrop(this)" class="box">
+                    <div class="box_title">
+                      <div class="box_title__name">Basement - Electrics</div>
+                      <div class="box_title__company">AusLek</div>
+                    </div>
+                    <div class="box_time"><i class="far fa-calendar-alt box_time__icon icon"></i>
+                      <div class="box_time__date">Today -</div>
+                      <div class="box_time__hour box_time__hour--start"> 8:30</div>
+                      <div class="box_time__hour box_time__hour--end">- 10:50</div>
+                    </div>
+                    <div class="box_duration"><i class="far fa-clock box_duration__icon icon"></i>
+                      <div class="box_duration__hour">2hr 20min</div>
+                    </div>
+                    <div class="box_crane">
+                      <div class="box_crane__icon fa-seedling fas icon"></div>
+                      <div class="box_crane__number">2</div>
+                    </div>
+                    <div class="box_editing">
+                      <div class="box_editing__icon fas fa-pencil-alt icon"></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="calendar">
+        <div class="calendar_time">
+          <div></div>
+          <div>5.00</div>
+          <div>5.30</div>
+          <div>6.00</div>
+          <div>6.30</div>
+          <div>7.00</div>
+          <div>7.30</div>
+          <div>8.00</div>
+          <div>8.30</div>
+          <div>9.00</div>
+          <div>9.30</div>
+          <div>10.00</div>
+          <div>10.30</div>
+          <div>11.00</div>
+          <div>11.30</div>
+          <div>12.00</div>
+          <div>12.30</div>
+          <div>13.00</div>
+          <div>13.30</div>
+          <div>14.00</div>
+          <div>14.30</div>
+          <div>15.00</div>
+          <div>15.30</div>
+        </div>
+        <div id="right" class="calendar_table">
+          <table id="table2">
+            <tbody>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+              <tr class="calendar_table__row">
+                <td class="calendar_table__col"></td>
+                <td class="calendar_table__col"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
