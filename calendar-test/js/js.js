@@ -24,10 +24,9 @@ redipsInit = function () {
         rd.hover.colorTd = rndColor();
     };
     rd.event.dropped = function () {
-         //debugger;
-        // var ddfd =  $( "#table2 .box-wrapper" );
+       
         $( "#table2 .box-wrapper" ).resizable({
-            //containment: "#table2"
+   
         });
         $( "#table1 .ui-resizable" ).removeAttr("style");
         $( "#table1 .ui-resizable" ).resizable( "destroy" );
@@ -70,18 +69,7 @@ function disableDrop(e){
 $(document).ready(function(){
     $( "#table2 .box-wrapper" ).resizable();
     $( "#table3 .box-wrapper" ).resizable();
-    //$( ".box-wrapper" ).on( "resizestart", function( event, ui ) {
-        //debugger;
-        // var ddf= this;
-        // var widget = $( "#table2 .box-wrapper" ).resizable( "widget" );
-        //
-        // ddf.style.position = "absolute";
-        //
-        // var parent =  ddf.parentNode;
-        // parent.style.position = "relative";
-
-
-    //} );
+   
 
 });
 
