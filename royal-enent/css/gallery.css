@@ -1,0 +1,126 @@
+
+
+.gallery-block .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* The Modal (background) */
+.gallery-block  .modal {
+    display: none;
+    position: fixed;
+    z-index: 99999999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #929292;
+}
+
+/* Modal Content */
+.gallery-block  .modal-content {
+    position: relative;
+    background-color: #929292;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+#gallery-block .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.gallery-block  .close:hover,
+.gallery-block  .close:focus {
+    color: #ffb18b;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gallery-block  .mySlides {
+    display: none;
+}
+
+.gallery-block  .cursor {
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    right: 10%;
+    top: 0;
+}
+
+/* Next & previous buttons */
+.gallery-block .prev,
+.gallery-block .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.gallery-block .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.gallery-block .prev:hover,
+.gallery-block .next:hover {
+    background-color: rgb(146, 146, 146);
+    color: #fff;
+}
+
+/* Number text (1/3 etc) */
+.gallery-block  .numbertext {
+    color: #f2f2f2;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.gallery-block  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.gallery-block  .demo {
+    opacity: 0.6;
+}
+
+.gallery-block  .active,
+.gallery-block  .demo:hover {
+    opacity: 1;
+}
+
+.gallery-block img.hover-shadow {
+    transition: 0.3s
+}
+
+.gallery-block  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
