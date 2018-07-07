@@ -3228,7 +3228,16 @@ template {
   clear: both;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
 html {
+  z-index: 9999;
   position: relative;
   overflow-x: hidden;
 }
@@ -3246,12 +3255,6 @@ body {
 .grey-block {
   position: relative;
   background: #f3f1ec;
-}
-
-h2,
-.h2 {
-  font-size: 1.5rem;
-  padding: 0.6em 0;
 }
 
 h3 {
@@ -3286,12 +3289,12 @@ textarea {
 }
 
 input {
-  padding: 28px 42px;
+  padding: 24px 42px;
 }
 
 textarea {
-  height: 200px;
-  padding: 22px 42px;
+  height: 210px;
+  padding: 25px 42px;
 }
 
 .btn,
@@ -3354,8 +3357,8 @@ button--md {
 }
 
 .circle-btn--sm {
-  width: 43px;
-  height: 17px;
+  width: 36px;
+  height: 16px;
 }
 
 .circle-btn--sm:before {
@@ -3796,22 +3799,36 @@ html[xmlns] .flexslider .slides {
   height: auto;
 }
 
+.header .preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  text-align: center;
+  background: #fff;
+  background-image: url("../images/preloader.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .header_nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 22px;
+  padding: 20px 0;
   background: #f3f1ec;
 }
 
 .header_nav__item {
   width: auto;
-  padding: 0 28px;
+  padding: 0 25px;
   border-right: 1px solid;
   font-size: 14px;
-  letter-spacing: 0.7px;
-  line-height: 0.8;
+  letter-spacing: 1.7px;
+  line-height: 1.2;
   text-transform: uppercase;
   color: #808369;
 }
@@ -3904,13 +3921,13 @@ html[xmlns] .flexslider .slides {
 }
 
 .header .logo_name__bottom {
-  margin-left: 18px;
+  margin-left: 17px;
   letter-spacing: 0;
-  line-height: 0.4;
+  line-height: 0.3;
 }
 
 .header .logo_type {
-  margin-top: 18px;
+  margin-top: 22px;
   margin-left: -31px;
   font-size: 12px;
   text-align: center;
@@ -4003,20 +4020,22 @@ html[xmlns] .flexslider .slides {
 
 .main .flexslider .slider_content__headline {
   display: block;
-  max-width: 800px;
+  max-width: 745px;
   margin-top: 17px;
+  padding-left: 10px;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
   font-size: 60px;
-  letter-spacing: 7px;
+  font-weight: 800;
+  letter-spacing: 6px;
   line-height: 1;
 }
 
 .main .flexslider .slider_content__headline:before {
   content: "";
   position: relative;
-  bottom: 44px;
+  bottom: 43px;
   display: block;
   width: 112px;
   height: 2px;
@@ -4027,7 +4046,7 @@ html[xmlns] .flexslider .slides {
 .main .flexslider .slider_content__headline:after {
   content: "";
   position: relative;
-  top: 47px;
+  top: 48px;
   display: block;
   width: 112px;
   height: 2px;
@@ -4048,11 +4067,17 @@ html[xmlns] .flexslider .slides {
 }
 
 .main .welcome {
-  padding: 100px 20px;
+  padding: 100px 0;
   box-sizing: border-box;
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+@media all and (max-width: 1170px) {
+  .main .welcome {
+    padding: 50px 20px !important;
+  }
 }
 
 .main .welcome_headline {
@@ -4116,6 +4141,7 @@ html[xmlns] .flexslider .slides {
 .main .welcome .three-blocks_item--food .three-blocks_item__name {
   width: 110px;
   margin-top: -7px;
+  margin-left: 3px;
 }
 
 .main .welcome .three-blocks_item--venues {
@@ -4126,7 +4152,8 @@ html[xmlns] .flexslider .slides {
 }
 
 .main .welcome .three-blocks_item--venues .three-blocks_item__name {
-  margin-left: 4px;
+  margin-left: 3px;
+  margin-top: -4px;
 }
 
 .main .welcome .three-blocks_item__btn {
@@ -4145,11 +4172,17 @@ html[xmlns] .flexslider .slides {
 
 .main .introduction {
   position: relative;
-  padding: 100px 20px;
+  padding: 100px 0;
   box-sizing: border-box;
   margin-top: 5px;
   overflow: visible;
   padding-bottom: 0;
+}
+
+@media all and (max-width: 1170px) {
+  .main .introduction {
+    padding: 50px 20px !important;
+  }
 }
 
 .main .introduction--about-us {
@@ -4164,10 +4197,10 @@ html[xmlns] .flexslider .slides {
   right: 0;
   bottom: 0;
   z-index: 0;
+  background-attachment: fixed;
   background: url("../images/5.png") no-repeat;
   background-position: center;
-  background-attachment: fixed;
-  height: 497px;
+  height: 695px;
 }
 
 .main .introduction_content__img--about-us {
@@ -4176,7 +4209,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .main .introduction:before {
-  height: 497px;
+  height: 695px;
   content: "";
   position: absolute;
   top: 0;
@@ -4188,7 +4221,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .main .introduction_headline {
-  padding-right: 4px;
+  padding-right: 24px;
   color: #fff;
   z-index: 2;
 }
@@ -4242,6 +4275,8 @@ html[xmlns] .flexslider .slides {
 
 .main .about-us_text__btn {
   min-width: 213px;
+  width: 100%;
+  max-width: 242px;
   margin-top: 48px;
   padding: 21px 21px;
   font-size: 14px;
@@ -4251,7 +4286,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .main .menu {
-  padding: 100px 20px;
+  padding: 100px 0;
   box-sizing: border-box;
   width: 100%;
   max-width: 1170px;
@@ -4259,8 +4294,14 @@ html[xmlns] .flexslider .slides {
   background: #f3f1ec;
 }
 
+@media all and (max-width: 1170px) {
+  .main .menu {
+    padding: 50px 20px !important;
+  }
+}
+
 .main .menu_headline:before {
-  top: 16px;
+  top: 17px;
 }
 
 .main .menu_headline:after {
@@ -4341,12 +4382,12 @@ html[xmlns] .flexslider .slides {
 }
 
 .main .menu-items_item__btn {
-  margin-top: 23px;
+  margin-top: 24px;
   background: #f3f1ec;
 }
 
 .main .menu_other {
-  padding: 26px 0;
+  padding: 27px 0;
   padding-left: 2px;
   font-size: 20px;
   font-weight: bold;
@@ -4358,17 +4399,23 @@ html[xmlns] .flexslider .slides {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 30px;
+  margin-top: 29px;
   margin-bottom: 20px;
   padding: 21px 50px;
 }
 
 .main .event {
-  padding: 100px 20px;
+  padding: 100px 0;
   box-sizing: border-box;
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+@media all and (max-width: 1170px) {
+  .main .event {
+    padding: 50px 20px !important;
+  }
 }
 
 .main .event .plans-wrap {
@@ -4399,6 +4446,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .main .event .plans-wrap .plan_headline {
+  margin: 0;
   margin-bottom: 45px;
   font-size: 18px;
   font-weight: bold;
@@ -4472,12 +4520,19 @@ html[xmlns] .flexslider .slides {
 
 .main .book {
   position: relative;
-  padding: 100px 20px;
+  padding: 100px 0;
   box-sizing: border-box;
   margin-top: 10px;
+  padding-bottom: 163px;
   overflow: visible;
   background: url("../images/12.png") no-repeat;
-  background-position: 98% 27%;
+  background-position: 61% 27%;
+}
+
+@media all and (max-width: 1170px) {
+  .main .book {
+    padding: 50px 20px !important;
+  }
 }
 
 .main .book:before {
@@ -4519,11 +4574,17 @@ html[xmlns] .flexslider .slides {
 }
 
 .main .reviews {
-  padding: 100px 20px;
+  padding: 100px 0;
   box-sizing: border-box;
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+@media all and (max-width: 1170px) {
+  .main .reviews {
+    padding: 50px 20px !important;
+  }
 }
 
 .main .reviews .carousel {
@@ -4568,12 +4629,12 @@ html[xmlns] .flexslider .slides {
 .main .reviews-slides_content {
   max-width: 878px;
   margin: 62px auto 0;
-  padding: 20px 0;
+  padding: 20px 80px;
   font-weight: bold;
   font-size: 20px;
   color: #808369;
   line-height: 1.6;
-  letter-spacing: 0.42px;
+  letter-spacing: 0px;
 }
 
 .main .reviews-slides_name {
@@ -4584,11 +4645,17 @@ html[xmlns] .flexslider .slides {
 }
 
 .main .blog {
-  padding: 100px 20px;
+  padding: 100px 0;
   box-sizing: border-box;
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+@media all and (max-width: 1170px) {
+  .main .blog {
+    padding: 50px 20px !important;
+  }
 }
 
 .main .blog_headline {
@@ -4687,13 +4754,12 @@ html[xmlns] .flexslider .slides {
   bottom: 0;
   z-index: 0;
   background-attachment: fixed;
-  height: 497px;
+  height: 695px;
   background: url("../images/17.png") no-repeat 101% 51%;
-  background-attachment: fixed;
 }
 
 .main .introduction--chef .headline {
-  padding-right: 0;
+  padding-right: 20px;
   padding-top: 8px;
 }
 
@@ -4734,7 +4800,7 @@ html[xmlns] .flexslider .slides {
 
 .main .introduction--chef .chef_text__name {
   display: block;
-  margin-top: 60px;
+  margin-top: 74px;
   font-size: 20px;
   letter-spacing: 0.8px;
 }
@@ -4754,13 +4820,19 @@ html[xmlns] .flexslider .slides {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 100px 0;
   box-sizing: border-box;
   padding-bottom: 84px;
 }
 
+@media all and (max-width: 1170px) {
+  .main .staff-wrapper {
+    padding: 50px 20px !important;
+  }
+}
+
 .main .staff-wrapper .headline {
-  padding-right: 3px;
+  padding-right: 25px;
 }
 
 .main .staff-wrapper .headline:before {
@@ -4781,18 +4853,19 @@ html[xmlns] .flexslider .slides {
   flex-wrap: wrap;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 22px -10px;
+  margin: 0 -19px;
 }
 
 .main .staff-wrapper .staff_item {
   width: 100%;
   -ms-flex: 0 0 260px;
   flex: 0 0 260px;
-  margin: 20px 10px;
+  margin: 20px 19px;
 }
 
 .main .staff-wrapper .staff_item__img {
-  width: 87%;
+  width: 100%;
+  max-width: 242px;
   height: 245px;
   margin: 0 auto;
   border-radius: 100%;
@@ -4800,7 +4873,7 @@ html[xmlns] .flexslider .slides {
 
 .main .staff-wrapper .staff_item__img--amanda {
   background: url("../images/19.png") no-repeat;
-  background-position: 50.7% 4%;
+  background-position: 50.5% 5%;
 }
 
 .main .staff-wrapper .staff_item__img--joseph {
@@ -4810,7 +4883,7 @@ html[xmlns] .flexslider .slides {
 
 .main .staff-wrapper .staff_item__img--anthony {
   background: url("../images/21.png") no-repeat;
-  background-position: 37% 11%;
+  background-position: 37% 11.1%;
 }
 
 .main .staff-wrapper .staff_item__img--julia {
@@ -4820,6 +4893,7 @@ html[xmlns] .flexslider .slides {
 
 .main .staff-wrapper .staff_item__name {
   margin-top: 44px;
+  padding-right: 8px;
   font-size: 20px;
   text-align: center;
   color: #808369;
@@ -4827,15 +4901,20 @@ html[xmlns] .flexslider .slides {
 
 .main .staff-wrapper .staff_item__position {
   margin-top: 10px;
+  padding-right: 7px;
   text-align: center;
   letter-spacing: 0;
 }
 
 .main .gallery-block {
-  padding: 100px 20px;
+  padding: 100px 0;
   box-sizing: border-box;
-  padding-right: 0;
-  padding-left: 0;
+}
+
+@media all and (max-width: 1170px) {
+  .main .gallery-block {
+    padding: 50px 20px !important;
+  }
 }
 
 .main .gallery-block .gallery {
@@ -4916,9 +4995,9 @@ html[xmlns] .flexslider .slides {
 
 .main .gallery-block_btn {
   position: relative;
-  margin-top: 22px;
+  margin-top: 23px;
   margin-bottom: 10px;
-  padding: 22px 31px;
+  padding: 22px 26px 22px 30px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -4928,21 +5007,27 @@ html[xmlns] .flexslider .slides {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 100px 0;
   box-sizing: border-box;
+}
+
+@media all and (max-width: 1170px) {
+  .main .feadback {
+    padding: 50px 20px !important;
+  }
 }
 
 .main .feadback_form {
   display: grid;
   display: -ms-grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto 90px;
+  grid-template-rows: auto auto 83px;
   -ms-grid-columns: 1fr 30px 1fr;
   -ms-grid-rows: auto 30px auto 30px 90px;
   grid-gap: 30px;
   max-width: 770px;
   margin: 0 auto;
-  padding: 20px 20px 10px;
+  padding: 25px 20px 10px;
 }
 
 .main .feadback_form > div:nth-child(1) {
@@ -4970,7 +5055,7 @@ html[xmlns] .flexslider .slides {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   width: 235px;
-  margin: 29px auto 0;
+  margin: 24px auto 0;
 }
 
 .main .feadback_circle-btn {
@@ -4987,7 +5072,7 @@ html[xmlns] .flexslider .slides {
 
 .main .feadback_circle-btn__text {
   position: absolute;
-  bottom: 16px;
+  bottom: 15px;
   width: 100%;
   text-align: center;
   font-size: 12px;
@@ -5001,8 +5086,8 @@ html[xmlns] .flexslider .slides {
 .footer_block {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
   padding-top: 55px;
@@ -5045,7 +5130,7 @@ html[xmlns] .flexslider .slides {
   z-index: 2;
   display: block;
   width: 305px;
-  margin: 0 20px;
+  margin: 0 77px;
 }
 
 .footer .logo:before {
@@ -5700,5 +5785,11 @@ html[xmlns] .flexslider .slides {
   #main.main .feadback_circle-btn__text {
     bottom: 0;
     font-size: 12px;
+  }
+}
+
+@media all and (min-width: 1320px) {
+  .introduction--about-us:after {
+    background-size: contain;
   }
 }

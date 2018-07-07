@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head lang="en">
     <title> - My Site</title>
     <meta name="viewport" content="width=device-width">
     <link href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/gallery.css">
@@ -12,6 +13,7 @@
   </head>
   <body>
     <header id="header" class="header clearfix">
+      <div class="preloader"></div>
       <div class="header_nav"><a href="#" class="header_nav__item header_nav__item--active fas fa-home"></a><a href="#about-us" class="header_nav__item">About us</a><a href="#pages" class="header_nav__item">Pages</a><a href="#services" class="header_nav__item">Services</a><a href="#menu" class="header_nav__item">Menu</a><a href="#gallery" class="header_nav__item">Gallery</a><a href="#blog" class="header_nav__item">Blog</a><a href="#contacts" class="header_nav__item">Contacts</a></div>
       <div class="mobile-nav-button">
         <div class="mobile-nav-button__line"></div>
@@ -44,18 +46,18 @@
     <main id="main" class="main clearfix">
       <div class="flexslider">
         <ul class="slides">
-          <li><img src="images/slide1.png"></li>
-          <li><img src="images/slide1.png"></li>
-          <li><img src="images/slide1.png"></li>
-          <li><img src="images/slide1.png"></li>
+          <li><img src="images/slide1.png" alt=""></li>
+          <li><img src="images/slide1.png" alt=""></li>
+          <li><img src="images/slide1.png" alt=""></li>
+          <li><img src="images/slide1.png" alt=""></li>
         </ul>
         <div class="slider_content">
-          <div class="slider_content__headline">A perfect  blend of sensation food</div><a href="#" class="slider_content__btn btn btn--lg">order service</a>
+          <h1 class="slider_content__headline">A perfect  blend of sensation food</h1><a href="#" class="slider_content__btn btn btn--lg">order service</a>
         </div><a href="#welcome" class="flexslider_circle-btn circle-btn circle-btn--lg fas fa-angle-down"></a>
       </div>
       <div id="welcome" class="welcome">
-        <div class="welcome_headline headline">
-          <div class="headline_top">catering</div>
+        <div class="animated bounceInLeft welcome_headline headline">
+          <h2 class="headline_top">catering</h2>
           <div class="headline_text">Welcome to the Best  Catering Company</div>
         </div>
         <div id="pages" class="three-blocks">
@@ -72,7 +74,7 @@
       </div>
       <div id="about-us" class="introduction introduction--about-us">
         <div class="introduction_headline headline">
-          <div class="headline_top">About Us</div>
+          <h2 class="headline_top">About Us</h2>
           <div class="headline_text">A Short Story About Our Company</div>
         </div>
         <div class="introduction_content">
@@ -94,7 +96,7 @@
       <div id="menu" class="grey-block">
         <div class="menu">
           <div class="menu_headline headline">
-            <div class="headline_top">catering</div>
+            <h2 class="headline_top">catering</h2>
             <div class="headline_text">Our Menu</div>
           </div>
           <div class="menu-items">
@@ -120,23 +122,23 @@
       </div>
       <div id="services" class="event">
         <div class="event_headline headline">
-          <div class="headline_top">services</div>
+          <h2 class="headline_top">services</h2>
           <div class="headline_text">Planning a Fabulous  Event?</div>
         </div>
         <div class="plans-wrap">
           <div class="plans-wrap_left">
             <div class="plan">
-              <div class="plan_headline">weddings</div>
+              <h5 class="plan_headline">weddings</h5>
               <div class="plan_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</div>
               <div class="plan_number">01</div>
             </div>
             <div class="plan">
-              <div class="plan_headline">corporate</div>
+              <h5 class="plan_headline">corporate</h5>
               <div class="plan_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</div>
               <div class="plan_number">02</div>
             </div>
             <div class="plan">
-              <div class="plan_headline">socials</div>
+              <h5 class="plan_headline">socials</h5>
               <div class="plan_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</div>
               <div class="plan_number">03</div>
             </div>
@@ -146,17 +148,17 @@
           </div>
           <div class="plans-wrap_right">
             <div class="plan">
-              <div class="plan_headline">picnics</div>
+              <h5 class="plan_headline">picnics</h5>
               <div class="plan_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</div>
               <div class="plan_number">04</div>
             </div>
             <div class="plan">
-              <div class="plan_headline">festivals</div>
+              <h5 class="plan_headline">festivals</h5>
               <div class="plan_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</div>
               <div class="plan_number">05</div>
             </div>
             <div class="plan">
-              <div class="plan_headline">private Paties</div>
+              <h5 class="plan_headline">private Paties</h5>
               <div class="plan_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</div>
               <div class="plan_number">06</div>
             </div>
@@ -165,25 +167,25 @@
       </div>
       <div class="book">
         <div class="book_headline headline">
-          <div class="headline_top">book today!</div>
+          <h2 class="headline_top">book today!</h2>
           <div class="headline_text">Book Your Tasting Session or Discuss Your Project</div>
         </div><a href="#" class="book_btn btn btn--md">send free request</a>
       </div>
       <div class="grey-block">
         <div class="reviews">
           <div class="reviews_headline headline">
-            <div class="headline_top">testimionials</div>
+            <h2 class="headline_top">testimionials</h2>
             <div class="headline_text">Clients About Us</div>
           </div>
           <div class="carousel clearfix">
             <div class="reviews-slides">
               <div class="reviews-slides_img"></div>
-              <div class="reviews-slides_content">"Having worked with a number of caterers over the years, their level of service was notablyhigh and they were integral to making the day a succes".</div>
+              <div class="reviews-slides_content">"Having worked with a number of caterers over the years, their level of service was notably high and they were integral to making the day a succes".</div>
               <div class="reviews-slides_name">laura & Adam Ashley, NY</div>
             </div>
             <div class="reviews-slides">
               <div class="reviews-slides_img"></div>
-              <div class="reviews-slides_content">"Having worked with a number of caterers over the years, their level of service was notablyhigh and they were integral to making the day a succes".</div>
+              <div class="reviews-slides_content">"Having worked with a number of caterers over the years, their level of service was notably high and they were integral to making the day a succes".</div>
               <div class="reviews-slides_name">laura & Adam Ashley, NY</div>
             </div>
           </div>
@@ -191,30 +193,30 @@
       </div>
       <div id="blog" class="blog">
         <div class="blog_headline headline">
-          <div class="headline_top">blog</div>
+          <h2 class="headline_top">blog</h2>
           <div class="headline_text">Recent Articles</div>
         </div>
         <div class="blog-items">
           <div class="blog-items_item">
             <div class="blog-items_item__img blog-items_item__img--location"></div>
             <div class="blog-items_item__date">jun 20,2016</div>
-            <div class="blog-items_item__headline">We Can Help Find a Location That's Right for You</div>
+            <h4 class="blog-items_item__headline">We Can Help Find a Location That's Right for You</h4>
           </div>
           <div class="blog-items_item">
             <div class="blog-items_item__img blog-items_item__img--services"></div>
             <div class="blog-items_item__date">jun 20,2016</div>
-            <div class="blog-items_item__headline">Catering Services for  Fabulous Corporate Events</div>
+            <h4 class="blog-items_item__headline">Catering Services for  Fabulous Corporate Events</h4>
           </div>
           <div class="blog-items_item">
             <div class="blog-items_item__img blog-items_item__img--menu"></div>
             <div class="blog-items_item__date">jun 20,2016</div>
-            <div class="blog-items_item__headline">Planning a Wedding Menu Can Be Daunting</div>
+            <h4 class="blog-items_item__headline">Planning a Wedding Menu Can Be Daunting</h4>
           </div>
         </div><a href="#" class="blog_btn btn btn--md">more articles</a>
       </div>
       <div class="introduction introduction--chef">
         <div class="introduction_headline headline">
-          <div class="headline_top">chef</div>
+          <h2 class="headline_top">chef</h2>
           <div class="headline_text">Who’s Behind Great Service?</div>
         </div>
         <div class="introduction_content chef">
@@ -238,7 +240,7 @@
       <div class="grey-block">
         <div class="staff-wrapper">
           <div class="staff_headline headline">
-            <div class="headline_top">staff</div>
+            <h2 class="headline_top">staff</h2>
             <div class="headline_text">Meet the Team</div>
           </div>
           <div class="staff">
@@ -267,32 +269,32 @@
       </div>
       <div id="gallery" class="gallery-block">
         <div class="gallery-block_headline headline">
-          <div class="headline_top">gallery</div>
+          <h2 class="headline_top">gallery</h2>
           <div class="headline_text">Check Our Recent  Projects</div>
         </div>
         <div class="gallery row">
-          <div class="gallery_photoset column"><img onclick="openModal();currentSlide(1)" class="hover-shadow cursor demo"></div>
-          <div class="gallery_photoset column"><img onclick="openModal();currentSlide(2)" class="hover-shadow cursor demo"></div>
-          <div class="gallery_photoset column"><img onclick="openModal();currentSlide(3)" class="hover-shadow cursor demo"></div>
-          <div class="gallery_photoset column"><img onclick="openModal();currentSlide(4)" class="hover-shadow cursor demo"></div>
-          <div class="gallery_photoset column"><img onclick="openModal();currentSlide(5)" class="hover-shadow cursor demo"></div>
+          <div class="gallery_photoset column"><img onclick="openModal();currentSlide(1)" alt="" class="hover-shadow cursor demo"></div>
+          <div class="gallery_photoset column"><img onclick="openModal();currentSlide(2)" alt="" class="hover-shadow cursor demo"></div>
+          <div class="gallery_photoset column"><img onclick="openModal();currentSlide(3)" alt="" class="hover-shadow cursor demo"></div>
+          <div class="gallery_photoset column"><img onclick="openModal();currentSlide(4)" alt="" class="hover-shadow cursor demo"></div>
+          <div class="gallery_photoset column"><img onclick="openModal();currentSlide(5)" alt="" class="hover-shadow cursor demo"></div>
         </div>
         <div id="myModal" class="modal"><span onclick="closeModal()" class="close cursor">&times;</span>
           <div class="modal-content">
             <div class="mySlides">
-              <div class="numbertext">1 / 5</div><img src="images/23.png" style="width:100%">
+              <div class="numbertext">1 / 5</div><img src="images/23.png" alt="">
             </div>
             <div class="mySlides">
-              <div class="numbertext">2 / 5</div><img src="images/24.png" style="width:100%">
+              <div class="numbertext">2 / 5</div><img src="images/24.png" alt="">
             </div>
             <div class="mySlides">
-              <div class="numbertext">3 / 5</div><img src="images/25.png" style="width:100%">
+              <div class="numbertext">3 / 5</div><img src="images/25.png" alt="">
             </div>
             <div class="mySlides">
-              <div class="numbertext">4 / 5</div><img src="images/26.png" style="width:100%">
+              <div class="numbertext">4 / 5</div><img src="images/26.png" alt="">
             </div>
             <div class="mySlides">
-              <div class="numbertext">5 / 5</div><img src="images/27.png" style="width:100%">
+              <div class="numbertext">5 / 5</div><img src="images/27.png" alt="">
             </div><a onclick="plusSlides(-1)" class="prev">&#10094;</a><a onclick="plusSlides(1)" class="next">&#10095;</a>
           </div>
         </div><a href="#" class="gallery-block_btn btn btn--md">view more projects</a>
@@ -300,18 +302,18 @@
       <div id="contacts" class="grey-block">
         <div class="feadback">
           <div class="feadback_headline headline">
-            <div class="headline_top">contact us</div>
+            <h2 class="headline_top">contact us</h2>
             <div class="headline_text">Leave a Feadback or Ask a Question</div>
           </div>
           <form class="feadback_form">
             <div class="feadback_form-group">
-              <input type="text" placeholder="Your name:" id="InputName">
+              <input type="text" placeholder="Your name:">
             </div>
             <div class="feadback_form-group">
-              <input type="email" aria-describedby="emailHelp" placeholder="e-mail address:" id="InputEmail1">
+              <input type="email" aria-describedby="emailHelp" placeholder="e-mail address:">
             </div>
             <div class="feadback_form-group">
-              <textarea rows="3" placeholder="send a message:" id="Textarea"></textarea>
+              <textarea rows="3" placeholder="send a message:"></textarea>
             </div>
             <button type="submit" class="feadback_btn btn btn--md">send message</button>
           </form>
@@ -333,6 +335,7 @@
       <div class="social-networks"><a href="#" class="social-networks_item fab fa-twitter"></a><a href="#" class="social-networks_item fab fa-facebook-f"></a><a href="#" class="social-networks_item fab fa-tumblr"></a><a href="#" class="social-networks_item fab fa-instagram"></a></div>
       <div class="footer_bottom">Ancora © 2016 All Rights Reserved<a href="#">Terms of Use</a><span>and</span><a href="#">Privacy Policy</a></div>
     </footer>
+    <script src="js/viewportchecker.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/row-grid.js"></script>
