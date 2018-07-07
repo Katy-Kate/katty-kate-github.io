@@ -3236,6 +3236,34 @@ template {
   opacity: 1;
 }
 
+.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.delay-2 {
+  animation-delay: 0.6s;
+}
+
+.delay-3 {
+  animation-delay: 0.9s;
+}
+
+.delay-4 {
+  animation-delay: 1.3s;
+}
+
+.delay-5 {
+  animation-delay: 1.6s;
+}
+
+.delay-6 {
+  animation-delay: 1.9s;
+}
+
+.delay-7 {
+  animation-delay: 2.3s;
+}
+
 html {
   z-index: 9999;
   position: relative;
@@ -5048,7 +5076,7 @@ html[xmlns] .flexslider .slides {
   -ms-grid-column-span: 3;
 }
 
-.main .feadback_form > button {
+.main .feadback_btn {
   grid-column: 1/-1;
   grid-row: 3;
   -ms-grid-row: 5;
