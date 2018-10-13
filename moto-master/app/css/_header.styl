@@ -1,0 +1,130 @@
+.header
+  //width 100vw
+  height auto
+  padding 3rem 1.3rem
+  margin 0 auto
+  background-image url('../img/mt-1316-content-bg01.jpg')
+  background-repeat no-repeat
+  background-size cover
+  &-top-wraper
+    max-width w_page
+    padding 1.33rem
+    margin 0 auto
+    cf()
+  &_logo
+    display inline-block
+    float left
+    width 20%
+    height auto
+  &_menu
+    width 65%
+    float left
+    ul
+      list-style-type none
+      display flex
+      flex-direction row
+      width auto
+      float right
+      margin 0
+      li
+        margin-right 1.3rem
+        a
+          padding .58em .75em
+          font-family font_2
+          font-size 0.8rem
+          text-transform uppercase
+          text-decoration none
+          color c_white
+          line-height 1.25
+          border 2px solid transparent
+          border-radius 1rem
+          outline none
+          &:hover
+            border-color c_active
+            transition all ease time_trans
+  &_social
+    float right
+    &__link
+      width 1.6rem
+      height 1.6rem
+      margin-right .8rem
+      font-size .8rem
+      text-decoration none
+      color c_white
+      text-align center
+      vertical-align middle
+      background c_active
+      border-radius 50%
+      padding-top .4rem
+      &:hover
+        background c_acthov
+        transition all ease time_trans
+  &_content
+    height 46.6rem
+    wh-1200()
+    text-align center
+    flex()
+    flex-direction column
+    justify-content center
+    align-items center
+    &__title
+      font-family font_2
+      font-size 6.6rem
+      color c_white
+      font-weight fw-heavy
+      line-height 1.1
+      padding-bottom 1.3rem
+    &__after-title
+      max-width 53.3rem
+      margin 1rem 0
+      font-family font_2
+      font-size 1.06rem
+      font-weight fw-heavy
+      letter-spacing 0.066rem
+      color c_white
+      text-transform uppercase
+    &__line
+      max-width 53.3rem
+      width 7%
+      height 0.13rem
+      margin 1.33rem auto
+      background c_white
+    &__text
+      max-width 53.3rem
+      margin-bottom 3.3rem
+      font-family font_2
+      font-size 1.066rem
+      font-weight fw-light
+      line-height 1.8
+      color c_white
+
+@media screen and (max-width: 959px)
+  .header_menu
+    display flex
+    justify-content center
+    width 100%
+    margin 1rem 0
+  .header_logo
+    display block
+    float none
+    width 90%
+    max-width 227px
+    height auto
+    margin 0 auto
+    img
+      width 100%
+  .header_social
+    display flex
+    float none
+    justify-content center
+    margin 1rem 0
+    clear both
+
+@media screen and (max-width: w_md)
+  .header_content__title
+    font-size 3.6rem
+
+@media screen and (max-width: w_xs)
+  .header_content__title
+    font-size 3rem
+    margin-top 3rem

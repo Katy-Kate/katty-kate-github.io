@@ -1,0 +1,1 @@
+jQuery(function(n){n(".rm-nav").rMenu({minWidth:"960px"})});

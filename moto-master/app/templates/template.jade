@@ -1,0 +1,32 @@
+doctype html
+include mixins
+html
+    include _head
+    body
+        header#home.header
+            .header-top-wraper
+                a.header_logo(href="#index")
+                    img.header_logo__img(src='img/mt-1316-logo-03.png')
+                .header_menu
+                    .rm-container
+                        a.rm-toggle.rm-button.rm-nojs(href="#") Menu
+                        nav.rm-nav.rm-nojs.rm-lighten
+                            +menu(menuItem)
+                .header_social
+                    a.header_social__link.fab.fa-facebook-f(href="#" aria-hidden="true")
+                    a.header_social__link.fab.fa-linkedin-in(href="#" aria-hidden="true")
+                    a.header_social__link.fab.fa-twitter(href="#" aria-hidden="true")
+            .header_content
+                .header_content__title Feel the Fresh Business Perspective
+                .header_content__after-title INNOVATIVE SOLUTIONS AND GLOBAL CONSULTING
+                .header_content__line
+                p.header_content__text We help global leaders with their organization's most critical issues and opportunities. Together, we create enduring change and results.
+                .header_content__btns
+                    a.btn.btn-darck.btn--lg(href="#") DETAILS
+                    a.btn.btn-light.btn--lg(href="#") CONTACT US
+        main
+            .container
+                block content
+        footer
+            +menu(footerMenu)
+

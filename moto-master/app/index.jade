@@ -1,0 +1,65 @@
+extends templates/template
+block title
+    title Startpage
+append css
+    link(href="css/style-startpage.css" rel="stylesheet")
+block content
+    #about
+        .about
+            .about_image
+                img.about_image__img(src="img/mt-1316-home-img01.jpg")
+            .about_content
+                .title-before WELCOME TO THE ARCTIC AIR
+                h1.title Who We Are
+                p.
+                    Our international team of professionals has over 45 years of collective knowledge and expertise that
+                    gives us a unique advantage in providing professional services to companies across a broad range
+                    of industries.
+                p.
+                    We deliver results-oriented and cost-effective marketing and business development solutions
+                    to help businesses maximize revenue and grow.
+                a.btn.btn-active.btn--md(href="#") MORE INFO
+        .choose
+            .choose_content
+                .title-before YOU WILL LIKE IT
+                h1.title Why Choose Us
+                p.
+                   We don’t clutter our communication with consultant-speak designed to make your issues
+                   appear more complex than they really are. We prefer to keep our language and our solutions
+                   friendly, simple and effective.
+                .choose_infos
+                    .choose_infos_item
+                        img.choose_infos_item__img(src="img/mt-1316-home-icon01.png")
+                        a.choose_infos_item__link(href="#") We’re experienced
+                        .choose_infos_item__text We are experienced professionals who will not only meet, but exceed, your expectations.
+                    .choose_infos_item
+                        img.choose_infos_item__img(src="img/mt-1316-home-icon02.png")
+                        a.choose_infos_item__link(href="#") We are flexible
+                        .choose_infos_item__text Because we are a small firm, we’re also responsive, flexible, agile, and client-oriented.
+                    .choose_infos_item
+                        img.choose_infos_item__img(src="img/mt-1316-home-icon03.png")
+                        a.choose_infos_item__link(href="#") We are effective
+                        .choose_infos_item__text We are reliable and we will make sure you’re set up for success before our work is done.
+                    .choose_infos_item
+                        img.choose_infos_item__img(src="img/mt-1316-home-icon04.png")
+                        a.choose_infos_item__link(href="#") We are cost-effective
+                        .choose_infos_item__text We adapt as your needs change, with the cost-effectiveness that larger firms just can’t match.
+        .request
+            .request_content
+                .request_content__title Send the request with your phone number
+                .request_form
+                    input(type="text" name="phone").request_form__input
+                    label(for="phone").request_form__title-after and we will call you back.
+                input(type="submit" value="contact us").btn.btn-light.btn--lg.request__btn
+
+
+
+
+
+
+
+
+
+
+
+

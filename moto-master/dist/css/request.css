@@ -1,0 +1,56 @@
+.request {
+  background: url("../img/mt-1316-content-bg02.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.request_content {
+  max-width: w_page;
+  margin: 0 auto;
+  padding: 3rem 1.33rem;
+}
+.request_content__title {
+  float: left;
+  width: 75%;
+  font-family: font_2;
+  font-size: 2.4rem;
+  font-weight: fw-heavy;
+  color: c_white;
+  line-height: 61px;
+}
+.request_form {
+  width: 75%;
+  float: left;
+  text-align: left;
+}
+.request_form__input {
+  height: 2.46rem;
+  font-size: 2.4rem;
+  background: transparent;
+  color: c_white;
+  border: none;
+  border-bottom: 1px solid c_white;
+}
+.request_form__title-after {
+  width: auto;
+  float: right;
+  font-family: font_2;
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: fw-light;
+  color: c_white;
+}
+.request__btn {
+  width: 22%;
+  float: right;
+  margin: 2rem 0 1rem 1rem;
+}
+@media screen and (max-width: w_lg) {
+  .request_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .request_form {
+    width: 100%;
+  }
+}

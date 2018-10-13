@@ -1,0 +1,32 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Site structure with gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katy-Kate/site-structure.git"
+  },
+  "author": "Kate Turalnikova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Katy-Kate/site-structure/issues"
+  },
+  "homepage": "https://github.com/Katy-Kate/site-structure#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "mixins-stylus": "0.0.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.2",
+    "gulp": "^3.9.1",
+    "normalize.css": "^7.0.0"
+  }
+}

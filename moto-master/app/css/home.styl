@@ -1,0 +1,27 @@
+.about
+  cf()
+  wh-page()
+  &_image
+    width: 30em
+    height 27em
+    float left
+    font-size 1rem
+    overflow hidden
+  &_content
+    float right
+    width 40rem
+
+@media(min-width: w_xs) and (max-width: w_lg)
+  .about
+    &_image
+      width 45%
+    &_content
+      width 50%
+
+@media(max-width: w_xs)
+  .about
+    &_image
+        width 100%!important
+        text-align center
+    &_content
+      width auto

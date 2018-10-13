@@ -1,0 +1,28 @@
+.about_image {
+  width: 30em;
+  height: 27em;
+  float: left;
+  font-size: 1rem;
+  overflow: hidden;
+}
+.about_content {
+  float: right;
+  width: 40rem;
+}
+@media (min-width: w_xs) and (max-width: w_lg) {
+  .about_image {
+    width: 45%;
+  }
+  .about_content {
+    width: 50%;
+  }
+}
+@media (max-width: w_xs) {
+  .about_image {
+    width: 100% !important;
+    text-align: center;
+  }
+  .about_content {
+    width: auto;
+  }
+}

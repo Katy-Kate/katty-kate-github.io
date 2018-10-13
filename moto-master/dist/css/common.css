@@ -1,0 +1,139 @@
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
+html,
+body {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  scroll-behavior: smooth;
+  min-width: 320px;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+* {
+  color: #47506d;
+  line-height: font-height;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.btn {
+  display: inline-block;
+  margin: 1em;
+  padding: 1.26em 1.66em;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2.66em;
+  border: 0.133em solid;
+  cursor: pointer;
+}
+.btn-darck {
+  background: #00283d;
+  border-color: #00283d;
+}
+.btn-darck:hover {
+  background: #fff;
+  color: #00283d;
+  border-color: #fff;
+}
+.btn-light {
+  background: transparent;
+  border-color: #fff;
+}
+.btn-light:hover {
+  background: #fff;
+  color: #00a9da;
+}
+.btn-active {
+  background: #00a9da;
+  border-color: #00a9da;
+}
+.btn-active:hover {
+  background: #00283d;
+  color: #fff;
+  border-color: transparent;
+}
+.btn--lg {
+  min-width: 13em;
+  font-size: 1rem;
+}
+.btn--md {
+  min-width: 11.6em;
+  padding: 0.966em 0.6em;
+  font-size: 0.866rem;
+  letter-spacing: 1px;
+}
+h1,
+.title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  font-size: 4rem;
+  font-weight: 200;
+  letter-spacing: 0;
+  color: #18213d;
+}
+.title-before {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.166em;
+  color: #00a9da;
+}
+h2 {
+  font-size: 1.5rem;
+}
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+a,
+a:focus,
+a:hover {
+  outline: none;
+}
+a:focus,
+a:hover {
+  color: #00a9da;
+}
+p {
+  display: block;
+  -webkit-margin-before: 2em;
+  -webkit-margin-after: 2em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-size: 1rem;
+  font-family: 'Open Sans';
+  font-weight: 200;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #47506d;
+}
+/*@media screen and (max-width: w_md)
+  h1
+  font-size*/
+@media screen and (max-width: 465px) {
+  .btn--lg {
+    font-size: 0.7rem;
+  }
+}
